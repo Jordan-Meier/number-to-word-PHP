@@ -42,6 +42,18 @@
             $this->assertEquals("one", $result);
         }
 
+        function test_convertToWord_twoDigitUnder20()
+        {
+            //Arrange
+            $test_NumberWord = new NumberWord;
+            $input = 13;
+            //Act
+            $result = $test_NumberWord->convertToWord($input);
+
+            //Assert
+            $this->assertEquals("thirteen", $result);
+        }
+
 
     }
 
