@@ -9,15 +9,13 @@
         {
             //Arrange
             $test_NumberWord = new NumberWord;
-            $input = "rock";
+            $input = 12345;
 
             //Act
-            $result = $test_NumberWord->playGame($input1, $input1);
+            $result = $test_NumberWord->splitNumber($input);
 
             //Assert
-            $this->assertEquals("draw", $result1);
-            $this->assertEquals("draw", $result2);
-            $this->assertEquals("draw", $result3);
+            $this->assertEquals(array(1,2,3,4,5), $result);
         }
 
 
