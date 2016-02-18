@@ -1,0 +1,31 @@
+1. split the input into an array.
+    input = 12345
+    output = array(1,2,3,4,5)
+
+2. reverse that array
+    input = array(1,2,3,4,5)
+    output = array(5,4,3,2,1)
+
+3. a single digit number to return the word counter part
+    input = 1
+    output = "one"
+
+4. a two digit number less than 21
+    input = 13
+    output = "thirteen"
+
+5. a two digit number above 19 with no ones value to return the word counter part
+    input = 30
+    output = "thirty"
+
+6. a two digit number above 19 to return the word counter part
+    input = 22
+    output = "twenty two"
+
+6. a three digit number with no ones or tens value to return the word counter part
+    input = 300
+    output = "three hundred"
+
+7. a three digit number to return the word counter part
+    input = 543
+    output = "five hundred and forty three"
