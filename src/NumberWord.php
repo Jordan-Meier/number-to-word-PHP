@@ -13,7 +13,8 @@
 
         function convertToWord($input)
         {
-            $num_bank = array(
+            $num_bank1 = array(
+                0 => "zero",
                 1 => "one",
                 2 => "two",
                 3 => "three",
@@ -32,7 +33,9 @@
                 16 => "sixteen",
                 17 => "seventeen",
                 18 => "eighteen",
-                19 => "nineteen",
+                19 => "nineteen"
+            );
+            $num_bank2 = array (
                 20 => "twenty",
                 30 => "thirty",
                 40 => "forty",
@@ -40,16 +43,17 @@
                 60 => "sixty",
                 70 => "seventy",
                 80 => "eighty",
-                90 => "ninety",
-                100 => "hundred",
-                1000 => "thousand",
-                1000000 => "million",
-                1000000000 => "billion",
-                1000000000000 => "trillion"
+                90 => "ninety"
             );
+            //     100 => "hundred",
+            //     1000 => "thousand",
+            //     1000000 => "million",
+            //     1000000000 => "billion",
+            //     1000000000000 => "trillion"
+            // );
 
             if ($input < 21) {
-                $string = $num_bank[$input];
+                $string = $num_bank1[$input];
             }
             return $string;
 
