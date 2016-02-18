@@ -53,6 +53,17 @@
             //Assert
             $this->assertEquals("thirteen", $result);
         }
+        function test_convertToWord_twoDigitAbove19NoOnes()
+        {
+            //Arrange
+            $test_NumberWord = new NumberWord;
+            $input = 30;
+            //Act
+            $result = $test_NumberWord->convertToWord($input);
+
+            //Assert
+            $this->assertEquals("thirty", $result);
+        }
 
 
     }

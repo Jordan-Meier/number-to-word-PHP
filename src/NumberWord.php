@@ -36,14 +36,14 @@
                 19 => "nineteen"
             );
             $num_bank2 = array (
-                20 => "twenty",
-                30 => "thirty",
-                40 => "forty",
-                50 => "fifty",
-                60 => "sixty",
-                70 => "seventy",
-                80 => "eighty",
-                90 => "ninety"
+                2 => "twenty",
+                3 => "thirty",
+                4 => "forty",
+                5 => "fifty",
+                6 => "sixty",
+                7 => "seventy",
+                8 => "eighty",
+                9 => "ninety"
             );
             //     100 => "hundred",
             //     1000 => "thousand",
@@ -52,8 +52,11 @@
             //     1000000000000 => "trillion"
             // );
 
-            if ($input < 21) {
+            if ($input < 20) {
                 $string = $num_bank1[$input];
+            }
+            elseif ($input >= 20 && $input < 100) {
+                $string = $num_bank2[(int)$input/10];
             }
             return $string;
 
